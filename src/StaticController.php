@@ -72,12 +72,11 @@ class StaticController
     }
 
     /**
-     * @param array $args
      * @return mixed
      */
-    public function __invoke(array $args)
+    public function __invoke()
     {
-        return $this->render($args);
+        return $this->render();
     }
 
     /**
