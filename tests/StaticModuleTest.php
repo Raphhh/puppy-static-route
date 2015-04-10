@@ -2,7 +2,7 @@
 namespace Puppy\StaticRoute;
 
 use Puppy\Application;
-use Puppy\MainModule;
+use Puppy\Template\TemplateModule;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -25,7 +25,7 @@ class StaticModuleTest extends \PHPUnit_Framework_TestCase
         $staticModule = new StaticModule();
         $staticModule->init($application);
 
-        $mainModule = new MainModule();
+        $mainModule = new TemplateModule();
         $mainModule->init($application);
 
         $this->expectOutputString('Hello world!');
@@ -44,7 +44,7 @@ class StaticModuleTest extends \PHPUnit_Framework_TestCase
 
         $application = new Application($config, $request);
 
-        $mainModule = new MainModule();
+        $mainModule = new TemplateModule();
         $mainModule->init($application);
 
         $staticModule = new StaticModule();
