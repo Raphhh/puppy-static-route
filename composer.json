@@ -1,0 +1,28 @@
+{
+    "name": "raphhh/puppy-static-route",
+    "description": "Static routing module for Puppy framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raphaël Lefebvre",
+            "email": "raphael@raphaellefebvre.be"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Puppy\\StaticRoute\\": [
+                "src/",
+                "tests/"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "raphhh/puppy-application": "~1.0",
+        "raphhh/puppy": "@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    }
+}
