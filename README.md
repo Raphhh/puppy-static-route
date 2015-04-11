@@ -20,7 +20,7 @@ $ composer require raphhh/puppy-static-route
 
 ## Documentation
 
-This module routes an uri to a template file. The router take the request uri and try to find an associated template.
+This module routes an uri to a template file. The router takes the request uri and tries to find an associated template.
 
 Note that the template files must be in the dir "<template.directory.main>/public/".
 
