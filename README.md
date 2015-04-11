@@ -20,13 +20,13 @@ $ composer require raphhh/puppy-static-route
 
 ## Documentation
 
-Route an uri to a template file. The router take the request uri and try to find an associated template.
+This module routes an uri to a template file. The router take the request uri and try to find an associated template.
 
 Note that the template files must be in the dir "<template.directory.main>/public/".
 
 If the request uri points to a dir and not a file, a default file will be searched. By default: "<dir>/index.html.twig".
 
-If no file is found in the templates, returns an HTTP 404 error.
+If no file is found in the templates, it returns an HTTP 404 error.
 
 
 ## Config options
